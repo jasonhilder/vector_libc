@@ -2,8 +2,8 @@
 #include "vector_lib.h"
 
 int main() {
-    Vec2D v1 = {10.0, 5.0};
-    Vec2D v2 = {3.0, 2.0};
+    const Vec2D v1 = {10.0, 5.0};
+    const Vec2D v2 = {3.0, 2.0};
 
     printf("Vector 1: (%.2f, %.2f)\n", v1.x, v1.y);
     printf("Vector 2: (%.2f, %.2f)\n", v2.x, v2.y);
@@ -29,13 +29,21 @@ int main() {
     double dot_prod = vector_dot_product(v1, v2);
     printf("Dot Product: %.2f\n", dot_prod);
 
-    // Magnitude
-    double mag_v1 = vector_magnitude(v1);
-    printf("Magnitude of v1: %.2f\n", mag_v1);
+    // Length
+    double length_v1 = vector_length(v1);
+    printf("Length of v1: %.2f\n", length_v1);
+    double length_v2 = vector_length(v2);
+    printf("Length of v2: %.2f\n", length_v2);
 
     // Distance between v1 and v2
     double distance_v1_v2 = vector_distance(v1, v2);
     printf("Distance between v1 and v2: %.2f\n", distance_v1_v2);
+
+    // Normalize
+    Vec2D normalized_v1 = vector_normalize(v1);
+    printf("V1 Normalized: (%.2f, %.2f)\n", normalized_v1.x, normalized_v1.y);
+    Vec2D normalized_v2 = vector_normalize(v2);
+    printf("V2 Normalized: (%.2f, %.2f)\n", normalized_v2.x, normalized_v2.y);
 
     return 0;
 }

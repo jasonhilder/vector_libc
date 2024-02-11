@@ -10,8 +10,9 @@ With the respective arithmetic being:
 
 And functions for:
 * The dot product
-* The magnitude
+* The length (magnitude)
 * Distance between two vectors
+* Normalizing a Vector
 
 To run the project (you need gcc, otherwise you need to update the makefile to use your compiler and flags etc):
 
