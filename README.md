@@ -14,7 +14,8 @@ And functions for:
 * Distance between two vectors
 * Normalizing a Vector
 
-To run the project (you need gcc, otherwise you need to update the makefile to use your compiler and flags etc):
+To run the project:
+!Note - I'm using zig's c compiler you will need to update the makefile to use your compiler and flags etc:
 
 ```
 make && ./vec

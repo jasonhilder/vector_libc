@@ -1,3 +1,5 @@
 vector_lib.o
 main.o
 vec
+vec.exe
+vec.pdb
